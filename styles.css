@@ -3,15 +3,15 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
-    color: #212529;
+    background-color: #007bff; /* Light blue background */
+    color: white;
 }
 header {
-    background-color: #495057;
+    background-color: #003f88; /* Darker blue */
     color: white;
     padding: 20px;
     text-align: center;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
 nav {
     text-align: center;
@@ -19,72 +19,55 @@ nav {
 }
 nav a {
     text-decoration: none;
-    color: #495057;
+    color: #003f88;
     font-size: 18px;
     margin: 0 10px;
     padding: 10px 15px;
-    border: 2px solid #495057;
+    border: 2px solid white;
     border-radius: 5px;
+    background-color: white;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 nav a:hover {
-    background-color: #495057;
+    background-color: #003f88;
     color: white;
 }
-.main-content {
+.projects {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: calc(100vh - 120px);
-    text-align: center;
-    padding: 20px;
-}
-.main-content .content-box {
-    background-color: white;
-    padding: 40px;
-    border-radius: 15px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
-}
-.main-content h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-    color: #495057;
-}
-.main-content p {
-    font-size: 20px;
-    margin-bottom: 30px;
-    color: #6c757d;
-}
-.main-content button {
-    padding: 15px 30px;
-    background-color: #6c63ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-.main-content button:hover {
-    background-color: #574ecf;
+    flex-wrap: wrap;
+    padding: 40px 20px;
 }
 .projects img {
-    width: 200px;
-    height: 200px;
+    width: 300px; /* Larger images */
+    height: 300px;
     margin: 15px;
-    border: 2px solid #ced4da;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
+    border: 4px solid white;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 .projects img:hover {
-    transform: scale(1.05);
+    transform: scale(1.1);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+.personal-project {
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 20px;
+    background-color: #0056b3; /* Slightly darker blue section */
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+.personal-project h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: white;
 }
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #495057;
+    background-color: #003f88;
     color: white;
     margin-top: 40px;
+    box-shadow: 0px -4px 6px rgba(0, 0, 0, 0.2);
 }
